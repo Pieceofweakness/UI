@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Вуз\\3 курс\\5 семестр\\Разработка интерфейсов\\1 практическая\\1 практическая.csproj",
+      "projectUniqueName": "D:\\Вуз\\3 курс\\5 семестр\\Разработка интерфейсов\\UI\\1 практическая\\1 практическая.csproj",
       "projectName": "1 практическая",
-      "projectPath": "D:\\Вуз\\3 курс\\5 семестр\\Разработка интерфейсов\\1 практическая\\1 практическая.csproj",
+      "projectPath": "D:\\Вуз\\3 курс\\5 семестр\\Разработка интерфейсов\\UI\\1 практическая\\1 практическая.csproj",
       "packagesPath": "C:\\Users\\DX\\.nuget\\packages\\",
-      "outputPath": "D:\\Вуз\\3 курс\\5 семестр\\Разработка интерфейсов\\1 практическая\\obj\\",
+      "outputPath": "D:\\Вуз\\3 курс\\5 семестр\\Разработка интерфейсов\\UI\\1 практическая\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

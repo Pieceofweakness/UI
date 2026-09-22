@@ -27,6 +27,7 @@ while (true)
         patient.BirthDate = InputBirthDay();
         patient.Phone = InputPhone();
         patient.Temperature = InputTemperature();
+        patient.SkinColor = InputSkinColor();
 
         patients.Add(patient);
         Console.WriteLine("\nПациент успешно добавлен");
@@ -103,6 +104,44 @@ Date InputBirthDay()
     }
 }
 
+RGB InputSkinColor()
+{
+    Console.WriteLine("Ввод цвета кожи в формате RGB");
+    int red = ReadChannel("Red");
+    int green = ReadChannel("Green");
+    int blue = ReadChannel("Blue");
+
+    return new RGB(red, green, blue);
+}
+
+int ReadChannel(string channel)
+{
+    int value;
+    while (true)
+    {
+        Console.WriteLine($"Введите значение канала {channel} (0-255)");
+        string channelInput = Console.ReadLine();
+
+        try
+        {
+            value = Convert.ToInt32(channelInput);
+
+            if (value >= 0 && value <= 255)
+            {
+                return value;
+            }
+            else
+            {
+                Console.WriteLine("Значение введено неправильно (0-255)");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Вводить нужно только цифры (0-255)");
+        }
+    }
+}
+
 string InputPhone()
 {
     Regex regex1 = new Regex(@"^\+[0-9]\([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}$");
@@ -137,6 +176,7 @@ double InputTemperature()
     }
     
 }
+
 
 void ShowPatients()
 {
