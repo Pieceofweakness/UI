@@ -1,6 +1,7 @@
-Point(3.4, 5.5)
-Line(Point(1.2, 3.4), Point(5, 6))
+Point(3.4, 5.5) color=(255,0,0)
+Line(Point(1.2, 3.4), Point(5, 6)) color=(123,12,1)
 Circle(Point(5, 6), 7)
 Point(1, 2, 3)
 mycop
 Circle(Point(5, 6), -7)
+Triangle(Point(0,0), Point(4,0), Point(3,0)) color=(255,128,0)
